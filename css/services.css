@@ -1,0 +1,46 @@
+/* ---------- services ---------- */
+
+.services{
+    flex-direction: column;
+    color: #fff;
+}
+
+.container{
+    padding: 2% 8%;
+    flex-direction: column;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.card{
+    height: 390px;
+    width: 370px;
+    background-color: #1c2335;
+    padding: 3% 8%;
+    border: 2px solid #1F51FF;
+    border-radius: 10px;
+    transition: 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.card i{
+    color: #1F51FF;
+    margin-bottom: 20px;
+    font-size: 4rem;
+}
+
+.card h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}

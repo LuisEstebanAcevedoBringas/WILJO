@@ -1,0 +1,163 @@
+header{
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+header.sticky{
+    background: #000;
+}
+
+header .menu{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+
+header .menu_container{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    width: 90%;
+}
+
+header img{
+    height: 50px;
+}
+
+header .company{
+    color: #fff;
+    font-size: 2rem;
+}
+
+header .company:hover{
+    cursor: pointer;
+    animation: pulsate 1.5s infinite alternate;  
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #1F51FF,
+    0 0 82px #1F51FF,
+    0 0 92px #1F51FF,
+    0 0 102px #1F51FF,
+    0 0 151px #1F51FF;
+}
+
+@keyframes pulsate {
+    100% {
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #1F51FF,
+        0 0 80px #1F51FF,
+        0 0 90px #1F51FF,
+        0 0 100px #1F51FF,
+        0 0 150px #1F51FF;
+    }
+
+    0% {
+        text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #1F51FF,
+        0 0 45px #1F51FF,
+        0 0 55px #1F51FF,
+        0 0 70px #1F51FF,
+        0 0 80px #1F51FF;
+    }
+}
+
+header .menu a{
+    transition-property: color, background;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 30px;
+    color: #fff;
+}
+
+header .menu a:hover{
+    transition: 0.5s;
+    color: #1F51FF;
+}
+
+
+header .btn{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+}
+
+header .menu .last{
+    padding-right: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 1060px){
+
+    header{
+        padding: 10px 30px;
+    }
+
+    header img{
+        height: 40px;
+    }
+
+    header .btn{
+        display: block;
+    }
+
+    header .menu a{
+        color: #000;
+    }
+
+    header .menu{
+        transition-property: right;
+        flex-direction: column;
+        background: #FDD863;
+        transition: 0.5s;
+        position: fixed;
+        min-width: 50%;
+        height: 100vh;
+        right: -100%;
+        top: 0;
+    }
+
+    header .menu.active{
+        right: 0;
+    }
+
+    header .menu .close-btn{
+        position: absolute;
+        margin: 25px;
+        left: 0;
+        top: 0;
+    }
+
+    header .menu a{
+        font-size: 20px;
+        padding: 0 15px;
+        display: block;
+        margin: 20px;
+    }
+
+    header .last{
+        padding-right: 0;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,22 @@
+.mainGallery{
+    position: relative;
+    height: 100vh;
+}
+
+.container_Gallery img{
+    transition: opacity 0.75s ease-in-out;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%; 
+    z-index:-1;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+
+@media only screen and (max-width : 415px){
+    .mainGallery{
+        height: 80vh;
+    }
+}

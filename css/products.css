@@ -1,0 +1,91 @@
+/* ---------- products ---------- */
+.products{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.products .pool{
+    background-image: url("../assets/images/products/billars.png");
+    background-size: cover;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+}
+
+.pool .text{
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.pool .text h4{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.machines{
+    flex-direction: row;
+    width: 100%;
+}
+
+.pool:hover, .juckbox:hover, .basket:hover, .atm:hover, .hockey:hover, .claw:hover, .others:hover{
+    opacity: 0.8;
+}
+
+.prod{
+    width: 33%;
+    height: 400px;
+}
+
+.prod .text{
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.prod .text h4{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+.juckbox{
+    background-image: url("../assets/images/products/juke.png");
+    background-size: cover;
+}
+
+.basket{
+    background-image: url("../assets/images/products/basket.png");
+    background-size: cover;
+}
+
+.atm{
+    background-image: url("../assets/images/products/atm.png");
+    background-size: cover;
+}
+
+.hockey{
+    background-image: url("../assets/images/products/hochey.jpeg");
+    background-size: cover;
+}
+
+.claw{
+    background-image: url("../assets/images/products/claw.png");
+    background-size: cover;
+}
+
+.others{
+    background-image: url("../assets/images/products/box.png");
+    background-size: cover;
+}

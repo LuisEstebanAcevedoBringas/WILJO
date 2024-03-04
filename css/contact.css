@@ -1,0 +1,151 @@
+body{
+    background: #000;
+    color: #fff;
+}
+
+.contact{
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    padding: 5rem 0;
+    height: 90vh;
+    width: 90%;
+}
+
+.sectionHeader{
+    text-transform: capitalize;
+    margin-bottom: .5em;
+    font-weight: bold;
+    color: #0076A3;
+    font-size: 3rem;
+}
+
+.heading,.sub-heading{
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.heading{
+    font-size: 2rem;
+}
+
+.sub-heading{
+    text-align: left;
+}
+
+.contactForm{
+    display: grid;
+    gap: 3em;
+}
+
+form{
+    margin-top: 3em;
+    width: 100%;
+}
+
+.para{
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+    color: #5e6c79;
+}
+
+.para2{
+    text-align: left;
+}
+
+.input{
+    border: 1px solid rgb(53, 53, 53);
+    background-color: #343F4B;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    max-width: 700px;
+    font-size: .9rem;
+    color: #5e6c79;
+    outline: none;
+    border: none;
+    padding: 1em;
+    width: 95%;
+}
+
+.input:focus{
+    border: 1px solid #0076A3;
+}
+
+.input::placeholder{
+    text-transform: capitalize;
+}
+
+.submit{
+    background-color: #0076A3;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    width: 100%;
+}
+
+.map-container{
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.mapBg{
+    background-color: #0076A3;
+    border-radius: 20px;
+    position: absolute;
+    width: 200px;
+    height: 90%;
+    right: 0;
+    top: 0;
+}
+
+.map{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    bottom: 0;
+    left: 0;
+}
+
+.map iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.contactMethod{
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+}
+
+.method{
+    align-items: center;
+    margin-top: 3rem;
+    display: flex;
+}
+
+.contactIcon{
+    color: #0076A3;
+    font-size: 2rem;
+    width: 70px;
+}
+
+@media screen and (min-width:800px) {
+    section{
+        max-width: 1100px;
+    }
+    .contactForm{
+        grid-template-columns: 1fr 1fr;
+    }   
+
+    .contactMethod{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,55 @@
+.about{
+    flex-direction: column;
+}
+
+.ab{
+    background: url("../assets/images/products/billars.png") no-repeat left;
+    background-size: 55%;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.aboutContainer{
+    background-color: #fdfdfd;
+    padding: 150px;
+    float: right;
+    width: 55%;
+}
+
+.aboutContainer h1{
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.about_text{
+    text-align: justify;
+    line-height: 30px;
+    color: #545454;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px){
+    .aboutContainer{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .aboutContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
