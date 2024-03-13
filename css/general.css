@@ -63,6 +63,7 @@ ul, li{
 
 .title{
     border-bottom: 3px solid #1F51FF;
+    text-align: center;
     color: #ffffff;
     font-size: 3rem;
     margin: 3rem;

@@ -1,5 +1,6 @@
 .about{
     flex-direction: column;
+    margin-top: 6rem;
 }
 
 .ab{
@@ -30,6 +31,9 @@
 }
 
 @media screen and (max-width:1200px){
+    .ab{
+        padding: 0;
+    }
     .aboutContainer{
         padding: 80px;
     }

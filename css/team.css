@@ -1,3 +1,9 @@
+/* ---------- Our team ---------- */
+.team{
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
 .team .card_Container{
     justify-content: center;
     align-items: center;

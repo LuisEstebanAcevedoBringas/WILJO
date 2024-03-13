@@ -4,20 +4,25 @@ body{
 }
 
 .contact{
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 0 auto;
     display: flex;
-    padding: 5rem 0;
-    height: 90vh;
+    height: 100vh;
     width: 90%;
 }
 
+.contactForm{
+    grid-template-columns: 1fr 1fr;
+}   
+
 .sectionHeader{
     text-transform: capitalize;
-    margin-bottom: .5em;
+    margin-bottom: .5rem;
     font-weight: bold;
-    color: #0076A3;
+    color: #1F51FF;
     font-size: 3rem;
 }
 
@@ -40,7 +45,7 @@ body{
 }
 
 form{
-    margin-top: 3em;
+    margin-top: 3rem;
     width: 100%;
 }
 
@@ -66,11 +71,11 @@ form{
     outline: none;
     border: none;
     padding: 1em;
-    width: 95%;
+    width: 100%;
 }
 
 .input:focus{
-    border: 1px solid #0076A3;
+    border: 1px solid #1F51FF;
 }
 
 .input::placeholder{
@@ -78,12 +83,20 @@ form{
 }
 
 .submit{
-    background-color: #0076A3;
+    background-color: #ffffff;
     font-weight: bold;
+    color: #1F51FF;
+    transition: 0.5s;
     cursor: pointer;
-    color: #fff;
     border: none;
     width: 100%;
+}
+
+.submit:hover{
+    background-color: #1F51FF;
+    transition: 0.5s;
+    color: #ffffff;
+
 }
 
 .map-container{
@@ -93,7 +106,7 @@ form{
 }
 
 .mapBg{
-    background-color: #0076A3;
+    background-color: #1F51FF;
     border-radius: 20px;
     position: absolute;
     width: 200px;
@@ -119,7 +132,6 @@ form{
     justify-content: space-around;
     flex-direction: row;
     text-align: left;
-    margin-top: 2em;
     display: flex;
     width: 100%;
 }
@@ -131,21 +143,28 @@ form{
 }
 
 .contactIcon{
-    color: #0076A3;
+    color: #1F51FF;
     font-size: 2rem;
     width: 70px;
 }
 
-@media screen and (min-width:800px) {
-    section{
-        max-width: 1100px;
+@media screen and (max-width:1024px) {
+    .contact{
+        margin-top: 8rem;
+        height: auto;
     }
+
     .contactForm{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }   
 
     .contactMethod{
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactMethod .text{
+        width: 200px;
     }
 }

@@ -19,13 +19,11 @@ filterItem.onclick = (selectedItem)=>{
     });
     }
 }
-
 for (let i = 0; i < filterImg.length; i++) {
 filterImg[i].setAttribute("onclick", "preview(this)");
 }
 }
-//fullscreen image preview function
-//selecting all required elements
+
 const previewBox = document.querySelector(".preview-box"),
 categoryName = previewBox.querySelector(".title2 p"),
 previewImg = previewBox.querySelector("img"),

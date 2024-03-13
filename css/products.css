@@ -1,8 +1,8 @@
 /* ---------- products ---------- */
 .products{
     flex-direction: column;
+    margin-top: 6rem;
     padding: 0;
-    margin: 0;
 }
 
 .products .pool{
@@ -43,20 +43,36 @@
     height: 400px;
 }
 
-.prod .text{
-    position: relative;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    z-index: 10;
-}
-
 .prod .text h4{
     text-transform: uppercase;
     font-size: 3rem;
     color: #fff;
     padding: 0;
     margin: 0;
+}
+
+@media screen and (max-width:1024px) {
+    .products .pool{
+        height: 400px;
+    }
+
+    .pool .text h4{
+        font-size: 3rem;
+    }
+
+    .machines{
+        flex-direction: column;
+    }
+
+    .prod{
+        height: 400px;
+        width: 100%;
+    }
+
+    .prod .text h4{
+        font-size: 3rem;
+    }
+    
 }
 
 
