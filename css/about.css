@@ -1,20 +1,5 @@
 .about{
     flex-direction: column;
-    margin-top: 6rem;
-}
-
-.ab{
-    background: url("../assets/images/products/billars.png") no-repeat left;
-    background-size: 55%;
-    overflow: hidden;
-    padding: 100px 0;
-}
-
-.aboutContainer{
-    background-color: #fdfdfd;
-    padding: 150px;
-    float: right;
-    width: 55%;
 }
 
 .aboutContainer h1{
@@ -23,37 +8,90 @@
     font-size: 30px;
 }
 
+.about_container{
+    width: 90%;
+}
+
+.cont2{
+    flex-direction: row-reverse;
+    margin: 3rem;
+}
+
+.about_img{
+    width: 50%;
+}
+
 .about_text{
     text-align: justify;
-    line-height: 30px;
-    color: #545454;
-    font-size: 13px;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 0 5rem;
+    width: 50%;
 }
 
-@media screen and (max-width:1200px){
-    .ab{
-        padding: 0;
-    }
-    .aboutContainer{
-        padding: 80px;
-    }
+.text2{
+    padding: 0;
 }
 
-@media screen and (max-width:1000px){
-    .about{
-        background-size: 100%;
-        padding: 100px 40px;
+.about_text2{
+    width: 100%;
+}
+
+.cards{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 3rem;
+    width: 90%;
+    gap: 30px;
+}
+
+.card{
+background-color: #1c2335;
+border: 2px solid #1F51FF;
+justify-content: center;
+flex-direction: column;
+text-align: justify;
+align-items: center;
+border-radius: 10px;
+overflow: hidden;
+transition: 0.6s;
+color: #ffffff;
+padding: 0 2rem;
+display: flex;
+height: 350px;
+width: 320px;
+}
+
+.card p{
+    font-size: 20px;
+    margin: 2rem 0;
+    height: 100px;
+}
+
+.card i{
+margin-bottom: 2rem;
+color: #1F51FF;
+font-size: 3rem;
+}
+
+
+@media screen and (max-width:1024px) {
+    .cards{
+        flex-direction: column;
     }
-    .aboutContainer{
+
+    .about_container, .cont2{
+        flex-direction: column;
         width: 100%;
     }
-}
 
-@media screen and (max-width:600px){
-    .about{
-        padding: 0;
+    .about_text{
+        padding: 1rem;
+        width: 90%;
     }
-    .inner-container{
-        padding: 60px;
+
+    .about_img{
+        width: 90%;
     }
 }

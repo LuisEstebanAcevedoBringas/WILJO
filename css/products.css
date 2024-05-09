@@ -1,7 +1,6 @@
 /* ---------- products ---------- */
 .products{
     flex-direction: column;
-    margin-top: 6rem;
     padding: 0;
 }
 
@@ -39,8 +38,8 @@
 }
 
 .prod{
-    width: 33%;
     height: 400px;
+    width: 33%;
 }
 
 .prod .text h4{
@@ -77,12 +76,12 @@
 
 
 .juckbox{
-    background-image: url("../assets/images/products/juke.png");
+    background-image: url("../assets/images/products/jukebox.png");
     background-size: cover;
 }
 
 .basket{
-    background-image: url("../assets/images/products/basket.png");
+    background-image: url("../assets/images/products/basketball.png");
     background-size: cover;
 }
 
@@ -92,16 +91,16 @@
 }
 
 .hockey{
-    background-image: url("../assets/images/products/hochey.jpeg");
+    background-image: url("../assets/images/products/hockey.png");
     background-size: cover;
 }
 
 .claw{
-    background-image: url("../assets/images/products/claw.png");
+    background-image: url("../assets/images/products/car.png");
     background-size: cover;
 }
 
 .others{
-    background-image: url("../assets/images/products/box.png");
+    background-image: url("../assets/images/products/boxer.png");
     background-size: cover;
 }
